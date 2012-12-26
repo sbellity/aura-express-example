@@ -1,0 +1,13 @@
+{{#if total}}
+  <span id="todo-count">
+    <strong class="number">{{remaining}}</strong>
+    <span class="word">{{itemPlural}}</span> {{itemsLeft}}
+  </span>
+{{/if}}
+{{#if completed}}
+  <button id="clear-completed">
+    {{clear}} {{completedPlural}}
+    <span class="number-done">({{completed}})</span>
+  </button>
+{{/if}}
+
