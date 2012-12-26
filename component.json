@@ -1,12 +1,14 @@
 {
   "name": "aura-express-example",
   "version": "0.1.0",
-  "main": "./app.js",
+  "main": "./app/app.js",
   "dependencies": {
-    "requirejs" : "~ 2.1",
-    "requirejs-i18n": "*",
-    "aura-express": "*",
-    "backbone": "*",
-    "backbone.localStorage": "*"
+    "aura-express": "latest",
+    "requirejs": "latest",
+    "requirejs-i18n": "latest",
+    "require-handlebars-plugin": "latest",
+    "jquery-ui": "latest",
+    "backbone": "latest",
+    "backbone.localStorage": "latest"
   }
 }
