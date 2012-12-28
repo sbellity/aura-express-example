@@ -9,6 +9,7 @@
     "require-handlebars-plugin": "latest",
     "jquery-ui": "latest",
     "backbone": "latest",
-    "backbone.localStorage": "latest"
+    "backbone.localStorage": "latest",
+    "jquery.cookie": "latest"
   }
 }

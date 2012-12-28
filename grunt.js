@@ -1,8 +1,8 @@
 module.exports = function(grunt) {
   'use strict';
 
-  grunt.loadNpmTasks('grunt-contrib');
-  grunt.loadNpmTasks('grunt-dox');
+  // grunt.loadNpmTasks('grunt-contrib');
+  // grunt.loadNpmTasks('grunt-dox');
 
   // ==========================================================================
   // Project configuration
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
     },
 
     lint: {
-      files: ['components/aura-express/**/*.js']
+      files: ['components/aura-express/lib/**/*.js']
     },
 
     watch: {

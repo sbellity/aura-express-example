@@ -1,4 +1,4 @@
-define(['../components/aura-express/lib/aura'], function(Aura) {
+define(['../../components/aura-express/lib/aura'], function(Aura) {
 
   var superExt = function(core) {
     core.super = "YEAH !";
