@@ -8,13 +8,11 @@ define({
       }
     }
   },
-  init: function(core) {
+  init: function(env) {
     console.warn("Loading Backbone LocalStorage extension...");
+    var Store = require('backbone').LocalStorage;
+    env.sandbox.data.Store = Store;
   },
 
-  sandbox: function(sandbox, core) {
-    var Store = require('backbone').LocalStorage;
-    sandbox.data.Store = Store;
-  }
 
 })

@@ -9,30 +9,29 @@
       }
     },
 
-    init: function(core) {
+    init: function(env) {
       var Backbone = require('backbone');
-      core.mvc =  Backbone;
-      core.Widgets.Backbone = Backbone.View;
+      env.core.mvc =  Backbone;
+      env.core.Widgets.Backbone = Backbone.View;
+      env.sandbox.mvc = {
+        View: function(o) {
+          return Backbone.View.extend(o);
+        },
+        Model: function(o) {
+          return Backbone.Model.extend(o);
+        },
+        Collection: function(o) {
+          return Backbone.Collection.extend(o);
+        }
+      };
     },
 
-    afterAppStart: function(core) {
+    afterAppStart: function(env) {
       if (!historyStarted) {
-        core.mvc.history.start();
+        env.core.mvc.history.start();
         historyStarted = true;
       }
     },
 
-    sandbox: function(sandbox, core) {
-      sandbox.mvc = {};
-      sandbox.mvc.View = function(view) {
-        return core.mvc.View.extend(view);
-      },
-      sandbox.mvc.Model = function(model) {
-        return core.mvc.Model.extend(model);
-      },
-      sandbox.mvc.Collection = function(collection) {
-        return core.mvc.Collection.extend(collection);
-      }
-    }
   })
 })();

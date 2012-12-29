@@ -16,10 +16,10 @@ define({
     }
   },
 
-  init: function(core) {
+  init: function(env) {
     // TODO: make it easier to inject multiple templating languages ?
     // cf. https://github.com/visionmedia/consolidate.js ?
     var Handlebars = require('handlebars');
-    core.template.hbs = Handlebars;
+    env.core.template.hbs = Handlebars;
   }
 })
