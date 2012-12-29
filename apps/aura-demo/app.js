@@ -12,7 +12,7 @@ define(['../../components/aura-express/lib/aura'], function(Aura) {
     .use('extensions/aura-backbone')
     .use('extensions/aura-backbone-localstorage')
     .use('extensions/aura-jquery-ui')
-    .start()
+    .start({ widgets: '#widget-container' })
     .done(function() {
       console.warn("App Started ok !");
     });
