@@ -13,7 +13,7 @@
       var Backbone = require('backbone');
       env.core.mvc =  Backbone;
       // env.core.Widgets.Backbone = Backbone.View;
-      env.sandbox.registerWidgetType('Backbone', Backbone.View.prototype);
+      env.core.registerWidgetType('Backbone', Backbone.View.prototype);
       env.sandbox.mvc = {
         View: function(o) {
           return Backbone.View.extend(o);
