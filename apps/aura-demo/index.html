@@ -26,7 +26,8 @@
         <p>Aura Express experiment, based on <a href="https://github.com/addyosmani/aura">AuraJS</a> </p>
       </footer>
     </div>
-    <script data-main="app" src="/components/requirejs/require.js"></script>
+    <script>var require = { baseUrl: document.location.origin };</script>
+    <script data-main="apps/aura-demo/app" src="/components/requirejs/require.js"></script>
   </body>
 
 </html>

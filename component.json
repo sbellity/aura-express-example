@@ -4,7 +4,6 @@
   "main": "./app/app.js",
   "dependencies": {
     "aura-express": "latest",
-    "requirejs": "latest",
     "requirejs-i18n": "latest",
     "require-handlebars-plugin": "latest",
     "jquery-ui": "latest",
