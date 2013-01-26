@@ -1,11 +1,9 @@
 define({
   name: "Backbone LocalStorage",
 
-  config: {
-    require: {
-      paths: {
-        'backbone.localStorage' : 'backbone.localStorage/backbone.localStorage'
-      }
+  require: {
+    paths: {
+      'backbone.localStorage' : 'backbone.localStorage/backbone.localStorage'
     }
   },
 

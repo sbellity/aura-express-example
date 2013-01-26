@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "main": "./app/app.js",
   "dependencies": {
-    "aura-express": "latest",
+    "aura-express": "git://github.com/sbellity/aura-express#feature/modularize",
     "requirejs-i18n": "latest",
     "require-handlebars-plugin": "latest",
-    "jquery-ui": "latest",
-    "backbone": "latest",
+    "jquery-ui": "1.9.2",
+    "backbone": "0.9.9",
     "backbone.localStorage": "latest",
     "jquery.cookie": "latest"
   }
