@@ -26,7 +26,7 @@
       };
     },
 
-    afterAppStart: function(env) {
+    afterAppStart: function(app) {
       if (!historyStarted) {
         app.core.mvc.history.start();
         historyStarted = true;
