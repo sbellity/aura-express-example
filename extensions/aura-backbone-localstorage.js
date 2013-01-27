@@ -3,7 +3,7 @@ define({
 
   require: {
     paths: {
-      'backbone.localStorage' : 'backbone.localStorage/backbone.localStorage'
+      'backbone.localStorage' : '/components/backbone.localStorage/backbone.localStorage'
     }
   },
 

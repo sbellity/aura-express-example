@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "main": "./app/app.js",
   "dependencies": {
-    "aura-express": "git://github.com/sbellity/aura-express#feature/modularize",
+    "aura-express": "git://github.com/tony/aura-express",
     "requirejs-i18n": "latest",
     "require-handlebars-plugin": "latest",
     "jquery-ui": "1.9.2",

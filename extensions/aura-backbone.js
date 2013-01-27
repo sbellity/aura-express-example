@@ -4,7 +4,7 @@
     name: "The Back of the Bone",
 
     require: {
-      paths:  { backbone: 'backbone/backbone' },
+      paths:  { backbone: '/components/backbone/backbone' },
       shim:   { backbone: { exports: 'Backbone', deps: ['underscore', 'jquery'] } }
     },
 
