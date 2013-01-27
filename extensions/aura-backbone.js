@@ -2,19 +2,18 @@
   var historyStarted = false;
   define({
     name: "The Back of the Bone",
-    config: {
-      require: {
-        paths:  { backbone: 'backbone/backbone' },
-        shim:   { backbone: { exports: 'Backbone', deps: ['underscore', 'jquery'] } }
-      }
+
+    require: {
+      paths:  { backbone: 'components/backbone/backbone' },
+      shim:   { backbone: { exports: 'Backbone', deps: ['underscore', 'jquery'] } }
     },
 
-    init: function(env) {
+    init: function(app) {
       var Backbone = require('backbone');
-      env.core.mvc =  Backbone;
+      app.core.mvc =  Backbone;
       // env.core.Widgets.Backbone = Backbone.View;
-      env.core.registerWidgetType('Backbone', Backbone.View.prototype);
-      env.sandbox.mvc = {
+      app.core.registerWidgetType('Backbone', Backbone.View.prototype);
+      app.sandbox.mvc = {
         View: function(o) {
           return Backbone.View.extend(o);
         },
@@ -27,9 +26,9 @@
       };
     },
 
-    afterAppStart: function(env) {
+    afterAppStart: function(app) {
       if (!historyStarted) {
-        env.core.mvc.history.start();
+        app.core.mvc.history.start();
         historyStarted = true;
       }
     },
