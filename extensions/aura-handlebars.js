@@ -3,10 +3,10 @@ define({
 
   require: {
     paths:  {
-      handlebars:     'require-handlebars-plugin/Handlebars',
-      hbs:            'require-handlebars-plugin/hbs',
-      i18nprecompile: 'require-handlebars-plugin/hbs/i18nprecompile',
-      json2 :         'require-handlebars-plugin/hbs/json2'
+      handlebars:     '/components/require-handlebars-plugin/Handlebars',
+      hbs:            '/components/require-handlebars-plugin/hbs',
+      i18nprecompile: '/components/require-handlebars-plugin/hbs/i18nprecompile',
+      json2 :         '/components/require-handlebars-plugin/hbs/json2'
     },
     hbs: {
       disableI18n: true,
